@@ -8,7 +8,5 @@ class Car(models.Model):
     _inherit = 'odoo_model_advanced_car'
 
     def action_stuff(self):
-        msg = '**************** action_stuff heredado %s -> %s ****************' % (
-            self.env.user.name, self.env.uid)
-        print(msg)
+        print('He realizado cambios sin que seas consciente')
         return super().action_stuff()

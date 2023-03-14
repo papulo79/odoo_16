@@ -24,9 +24,7 @@ class Car(models.Model):
             self.under_fuel = False
 
     def action_stuff(self):
-        msg = '**************** action_stuff %s -> %s ****************' % (
-            self.env.user.name, self.env.uid)
         try:
-            print(msg)
+            print('función action_stuff ejecutándose')
         except TypeError:
             return False
